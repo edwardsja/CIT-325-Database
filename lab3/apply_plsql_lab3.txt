@@ -1,0 +1,35 @@
+Log: apply_plsql_lab3.txt
+==================================================
+Test Case: Valid number, string, null             
+--------------------------------------------------
+SP2-0310: unable to open file "/home/student/Data/cit225/oracle/lib1/cleanup_oracle.sql"
+SP2-0310: unable to open file "/home/student/Data/cit225/oracle/lib1/Oracle12cPLSQLCode/Introduction/create_video_store.sql"
+38, catch22,
+
+PL/SQL procedure successfully completed.
+
+Usage: { EXIT | QUIT } [ SUCCESS | FAILURE | WARNING | n |
+<variable> | :<bindvariable> ] [ COMMIT | ROLLBACK ]
+==================================================
+Test Case: Valid number, string, and date         
+--------------------------------------------------
+SP2-0310: unable to open file "/home/student/Data/cit225/oracle/lib1/cleanup_oracle.sql"
+SP2-0310: unable to open file "/home/student/Data/cit225/oracle/lib1/Oracle12cPLSQLCode/Introduction/create_video_store.sql"
+41, aerodromes, 13-OCT-07
+
+PL/SQL procedure successfully completed.
+
+Usage: { EXIT | QUIT } [ SUCCESS | FAILURE | WARNING | n |
+<variable> | :<bindvariable> ] [ COMMIT | ROLLBACK ]
+==================================================
+Test Case: Valid number, string, and invalid date 
+--------------------------------------------------
+SP2-0310: unable to open file "/home/student/Data/cit225/oracle/lib1/cleanup_oracle.sql"
+SP2-0310: unable to open file "/home/student/Data/cit225/oracle/lib1/Oracle12cPLSQLCode/Introduction/create_video_store.sql"
+81, dagger,
+
+PL/SQL procedure successfully completed.
+
+Usage: { EXIT | QUIT } [ SUCCESS | FAILURE | WARNING | n |
+<variable> | :<bindvariable> ] [ COMMIT | ROLLBACK ]
+==========================================

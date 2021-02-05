@@ -1279,32 +1279,32 @@ FULL_NAME        TITLE                          PRODUCT      CHECK_OUT_DATE
 ---------------- ------------------------------ ------------ ------------------ 
 RETURN_DATE                                                                     
 ------------------                                                              
-Brian Winn       The Hunt for Red October       DVD          04-FEB-21          
-09-FEB-21                                                                       
+Brian Winn       The Hunt for Red October       DVD          05-FEB-21          
+10-FEB-21                                                                       
                                                                                 
-Brian Winn       We Were Soldiers               DVD          04-FEB-21          
-09-FEB-21                                                                       
+Brian Winn       We Were Soldiers               DVD          05-FEB-21          
+10-FEB-21                                                                       
                                                                                 
-Doreen Vizquel   Around the World in 80 Days    DVD          04-FEB-21          
-09-FEB-21                                                                       
+Doreen Vizquel   Around the World in 80 Days    DVD          05-FEB-21          
+10-FEB-21                                                                       
                                                                                 
-Doreen Vizquel   Tomorrow Never Dies            DVD          04-FEB-21          
-09-FEB-21                                                                       
+Doreen Vizquel   Tomorrow Never Dies            DVD          05-FEB-21          
+10-FEB-21                                                                       
                                                                                 
-Oscar Vizquel    Star Wars - Episode I          DVD          04-FEB-21          
-09-FEB-21                                                                       
+Oscar Vizquel    Star Wars - Episode I          DVD          05-FEB-21          
+10-FEB-21                                                                       
                                                                                 
-Oscar Vizquel    Star Wars - Episode II         DVD          04-FEB-21          
-09-FEB-21                                                                       
+Oscar Vizquel    Star Wars - Episode II         DVD          05-FEB-21          
+10-FEB-21                                                                       
                                                                                 
-Oscar Vizquel    Star Wars - Episode III        DVD          04-FEB-21          
-09-FEB-21                                                                       
+Oscar Vizquel    Star Wars - Episode III        DVD          05-FEB-21          
+10-FEB-21                                                                       
                                                                                 
-Ian M Sweeney    Spider-Man                     DVD          04-FEB-21          
-09-FEB-21                                                                       
+Ian M Sweeney    Spider-Man                     DVD          05-FEB-21          
+10-FEB-21                                                                       
                                                                                 
-Meaghan Sweeney  The Patriot                    DVD          04-FEB-21          
-09-FEB-21                                                                       
+Meaghan Sweeney  The Patriot                    DVD          05-FEB-21          
+10-FEB-21                                                                       
                                                                                 
 
 9 rows selected.

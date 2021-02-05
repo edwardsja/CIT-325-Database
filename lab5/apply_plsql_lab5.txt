@@ -29,19 +29,19 @@ ITEM                      15 RATING_AGENCY_ID                NUMBER(22)
 15 rows selected.
 
 
-Warning: Type created with compilation errors.
+Type created.
 
-     lv_rating_agency_tab( lv_rating_agency_tab.COUNT) :=
-                                                       *
-ERROR at line 8:
-ORA-06550: line 8, column 56:
-PLS-00103: Encountered the symbol "=" when expecting one of the following: 
-. ( , % ; limit
-ORA-06550: line 14, column 1:
-PLS-00103: Encountered the symbol "END" when expecting one of the following: 
-begin function pragma procedure subtype type <an identifier> 
-<a double-quoted delimited-identifier> current cursor delete 
-exists prior 
+
+Type created.
+
+  INTO lv_rating_agency_tab;
+       *
+ERROR at line 26:
+ORA-06550: line 26, column 8:
+PLS-00386: type mismatch found at 'LV_RATING_AGENCY_TAB' between FETCH cursor
+and INTO variables
+ORA-06550: line 25, column 3:
+PL/SQL: SQL Statement ignored 
 
 
 

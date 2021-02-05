@@ -61,41 +61,44 @@ TYPE rating_agency_obj IS OBJECT
   ( rating_agency_id  NUMBER
   , rating            VARCHAR2(8)
   , rating_agency     VARCHAR2(4));
+/
 
+CREATE OR REPLACE
+TYPE rating_agency_tab is TABLE OF rating_agency_obj;
+/
   
 DECLARE
 
-CURSOR c IS
-  SELECT  ra.rating_agency_id
-        , ra.string
-        , ra.rating_agency 
-        FROM rating_agency ra;
-
-CREATE
-TYPE rating_agency_tab is TABLE OF rating_agency_obj;
-
 lv_rating_agency_tab  RATING_AGENCY_TAB := rating_agency_tab();
-/
+
+CURSOR c IS 
+    SELECT ra.rating_agency_id AS lv_rating_agency_id
+         , ra.rating AS lv_rating
+         , ra.rating_agency AS lv_rating_agency
+         FROM rating_agency ra;
 
 BEGIN
 
-FOR i in 1..1 LOOP 
-  OPEN c;
-  lv_rating_agency_tab.EXTEND;
+OPEN c;
+
+LOOP
+  FETCH c
+  INTO lv_rating_agency_tab;
   
-  FETCH c INTO 
-     lv_rating_agency_tab( lv_rating_agency_tab.COUNT) :=
-        rating_agency_obj( lv_rating_agency_id
-                      , lv_rating
-                      , lv_rating_agency );
-  CLOSE c;
-	
+  EXIT WHEN c%NOTFOUND;
+  
 END LOOP;
 
+CLOSE c;
+
+
 FOR i in 1..lv_rating_agency_tab.COUNT LOOP 
-  UPDATE item
-  SET rating_agency_id = lv_rating_agency_tab(i).rating_agency_id
-  WHERE item.item_rating = lv_rating_agency_tab(i).lv_rating AND item.item_rating_agency = lv_rating_agency_tab(i).lv_rating_agency; 
+--     dbms_output.put_line('LV_RATING_AGENCY_ID    ['||lv_rating_agency_tab(i).rating_agency_id||']');
+--     dbms_output.put_line('LV_RATING    ['||lv_rating_agency_tab(i).rating||']');
+--     dbms_output.put_line('LV_RATING_AGENCY    ['||lv_rating_agency_tab(i).rating_agency||']');
+   UPDATE item
+   SET rating_agency_id = lv_rating_agency_tab.rating_agency_id
+   WHERE item.item_rating = lv_rating_agency_tab(i).rating AND item.item_rating_agency = lv_rating_agency_tab(i).rating_agency; 
 END LOOP;
 
 END;

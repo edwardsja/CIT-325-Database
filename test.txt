@@ -1,0 +1,10 @@
+B                                                                               
+C                                                                               
+A                                                                               
+A                                                                               
+C                                                                               
+D                                                                               
+B                                                                               
+
+PL/SQL procedure successfully completed.
+

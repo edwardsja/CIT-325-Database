@@ -1,3 +1,7 @@
+BEGIN
+*
+ERROR at line 1:
+ORA-00054: resource busy and acquire with NOWAIT specified or timeout expired
+ORA-06512: at line 26 
 
-PL/SQL procedure successfully completed.
 

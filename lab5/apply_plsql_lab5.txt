@@ -34,16 +34,19 @@ Type created.
 
 Type created.
 
-  INTO lv_rating_agency_tab;
-       *
-ERROR at line 26:
-ORA-06550: line 26, column 8:
-PLS-00386: type mismatch found at 'LV_RATING_AGENCY_TAB' between FETCH cursor
-and INTO variables
-ORA-06550: line 25, column 3:
-PL/SQL: SQL Statement ignored 
+
+PL/SQL procedure successfully completed.
 
 
+RATING_AGENCY_ID   COUNT(*)                                                     
+---------------- ----------                                                     
+            1001         26                                                     
+            1002          7                                                     
+            1003          7                                                     
+            1004          3                                                     
+            1005         45                                                     
+            1006          3                                                     
+            1007          2                                                     
 
-no rows selected
+7 rows selected.
 

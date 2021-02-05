@@ -72,32 +72,22 @@ DECLARE
 lv_rating_agency_tab  RATING_AGENCY_TAB := rating_agency_tab();
 
 CURSOR c IS 
-    SELECT ra.rating_agency_id AS lv_rating_agency_id
-         , ra.rating AS lv_rating
-         , ra.rating_agency AS lv_rating_agency
+    SELECT ra.rating_agency_id 
+         , ra.rating 
+         , ra.rating_agency
          FROM rating_agency ra;
 
 BEGIN
 
-OPEN c;
-
-LOOP
-  FETCH c
-  INTO lv_rating_agency_tab;
-  
-  EXIT WHEN c%NOTFOUND;
-  
+FOR i in c LOOP
+lv_rating_agency_tab.EXTEND;
+lv_rating_agency_tab(lv_rating_agency_tab.COUNT) :=
+rating_agency_obj(i.rating_agency_id, i.rating, i.rating_agency);
 END LOOP;
 
-CLOSE c;
-
-
 FOR i in 1..lv_rating_agency_tab.COUNT LOOP 
---     dbms_output.put_line('LV_RATING_AGENCY_ID    ['||lv_rating_agency_tab(i).rating_agency_id||']');
---     dbms_output.put_line('LV_RATING    ['||lv_rating_agency_tab(i).rating||']');
---     dbms_output.put_line('LV_RATING_AGENCY    ['||lv_rating_agency_tab(i).rating_agency||']');
    UPDATE item
-   SET rating_agency_id = lv_rating_agency_tab.rating_agency_id
+   SET rating_agency_id = lv_rating_agency_tab(i).rating_agency_id
    WHERE item.item_rating = lv_rating_agency_tab(i).rating AND item.item_rating_agency = lv_rating_agency_tab(i).rating_agency; 
 END LOOP;
 

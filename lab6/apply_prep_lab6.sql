@@ -12,8 +12,8 @@ SET PAGESIZE 49999
 SET SERVEROUTPUT ON SIZE UNLIMITED
 
 -- Call seeding libraries.
-@$LIB/cleanup_oracle.sql
-@$LIB/Oracle12cPLSQLCode/Introduction/create_video_store.sql
+@/home/student/Data/cit325/lib/cleanup_oracle.sql
+@/home/student/Data/cit325/lib/Oracle12cPLSQLCode/Introduction/create_video_store.sql
 
 -- Open log file.
 SPOOL apply_prep_lab6.txt
@@ -882,6 +882,11 @@ END;
 CREATE PROCEDURE insert_items
 ( pv_items  ITEM_TAB ) IS
 
+  lv_local_object  VARCHAR2(30) := 'PROCEDURE';
+  lv_local_module  VARCHAR2(30) := 'INSERT_ITEM';
+  
+  PRAGMA AUTONOMOUS_TRANSACTION;
+
 BEGIN
   /* Read the list of items and call the insert_item procedure. */
   FOR i IN 1..pv_items.COUNT LOOP
@@ -893,6 +898,15 @@ BEGIN
                , pv_item_rating_agency => pv_items(i).item_rating_agency
                , pv_item_release_date => pv_items(i).item_release_date );
   END LOOP;
+
+EXCEPTION
+  WHEN OTHERS THEN
+    record_errors( object_name => lv_local_object
+                 , module_name => lv_local_module
+                 , sqlerror_code => 'ORA'||SQLCODE
+                 , sqlerror_message => SQLERRM
+                 , user_error_message => DBMS_UTILITY.FORMAT_ERROR_BACKTRACE );
+    RAISE;
 END;
 /
 

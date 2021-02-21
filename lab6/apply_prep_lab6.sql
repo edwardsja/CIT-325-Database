@@ -883,7 +883,7 @@ CREATE PROCEDURE insert_items
 ( pv_items  ITEM_TAB ) IS
 
   lv_local_object  VARCHAR2(30) := 'PROCEDURE';
-  lv_local_module  VARCHAR2(30) := 'INSERT_ITEM';
+  lv_local_module  VARCHAR2(30) := 'INSERT_ITEMS';
   
   PRAGMA AUTONOMOUS_TRANSACTION;
 

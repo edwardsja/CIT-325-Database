@@ -44,11 +44,6 @@ SELECT system_user_id
 FROM   system_user
 WHERE  system_user_name LIKE 'DBA%';
 
-SELECT system_user_id
-,      system_user_name
-FROM   system_user
-WHERE  system_user_name LIKE 'DBA%';
-
 
 -- deletes function or procedure insert_contact
 BEGIN

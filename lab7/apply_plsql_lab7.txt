@@ -41,36 +41,27 @@ PL/SQL procedure successfully completed.
 FULL_NAME                NUMBER     ADDRESS                TELEPHONE            
 ------------------------ ---------- ---------------------- --------------       
 Charles Francis Xavier   SLC-000008 Milbridge, Maine       (207) 111-1234       
-Charles Francis Xavier   SLC-000008 Milbridge, Maine       (207) 111-1234       
-Charles Francis Xavier   SLC-000008 Milbridge, Maine       (207) 111-1234       
 
-3 rows selected.
+1 row selected.
 
 
                          ACCOUNT                                                
 FULL_NAME                NUMBER     ADDRESS                TELEPHONE            
 ------------------------ ---------- ---------------------- --------------       
 Maura Jane Haggerty      SLC-000009 Bangor, Maine          (207) 111-1234       
-Maura Jane Haggerty      SLC-000009 Bangor, Maine          (207) 111-1234       
-Maura Jane Haggerty      SLC-000009 Bangor, Maine          (207) 111-1234       
 
-3 rows selected.
+1 row selected.
 
 
                          ACCOUNT                                                
 FULL_NAME                NUMBER     ADDRESS                TELEPHONE            
 ------------------------ ---------- ---------------------- --------------       
 Harriet Mary McDonnell   SLC-000010 Orono, Maine           (207) 111-1234       
-Harriet Mary McDonnell   SLC-000010 Orono, Maine           (207) 111-1234       
-Harriet Mary McDonnell   SLC-000010 Orono, Maine           (207) 111-1234       
 
-3 rows selected.
+1 row selected.
 
-CREATE OR REPLACE TYPE contact_obj IS OBJECT
-*
-ERROR at line 1:
-ORA-02303: cannot drop or replace a type with type or table dependents 
 
+Type created.
 
 
 Type created.
@@ -157,32 +148,8 @@ Harriet              Mar
 y                 McDonn                                                        
 ell                                                                             
                                                                                 
-Charles              Fra                                                        
-ncis              Xavier                                                        
-                                                                                
-                                                                                
-Maura                Jan                                                        
-e                 Hagger                                                        
-ty                                                                              
-                                                                                
-Harriet              Mar                                                        
-y                 McDonn                                                        
-ell                                                                             
-                                                                                
-Charles              Fra                                                        
-ncis              Xavier                                                        
-                                                                                
-                                                                                
-Maura                Jan                                                        
-e                 Hagger                                                        
-ty                                                                              
-                                                                                
-Harriet              Mar                                                        
-y                 McDonn                                                        
-ell                                                                             
-                                                                                
 
-27 rows selected.
+21 rows selected.
 
 SP2-0042: unknown command "END" - rest of line ignored.
 
@@ -264,30 +231,6 @@ Harriet              Mar
 y                 McDonn                                                        
 ell                                                                             
                                                                                 
-Charles              Fra                                                        
-ncis              Xavier                                                        
-                                                                                
-                                                                                
-Maura                Jan                                                        
-e                 Hagger                                                        
-ty                                                                              
-                                                                                
-Harriet              Mar                                                        
-y                 McDonn                                                        
-ell                                                                             
-                                                                                
-Charles              Fra                                                        
-ncis              Xavier                                                        
-                                                                                
-                                                                                
-Maura                Jan                                                        
-e                 Hagger                                                        
-ty                                                                              
-                                                                                
-Harriet              Mar                                                        
-y                 McDonn                                                        
-ell                                                                             
-                                                                                
 
-27 rows selected.
+21 rows selected.
 

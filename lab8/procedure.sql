@@ -70,8 +70,8 @@ CREATE OR REPLACE PACKAGE BODY contact_package IS
   lv_member_id           NUMBER;
   
   lv_creation_date DATE := SYSDATE;
-  lv_created_by NUMBER := NVL(pv_user_id, -1);
-  lv_last_updated_by NUMBER := NVL(pv_user_id, -1);
+  lv_created_by NUMBER := 1;
+  lv_last_updated_by NUMBER := 1;
   lv_last_update_date DATE := SYSDATE;
   
   CURSOR get_lookup_type
@@ -364,7 +364,7 @@ END IF;
   , lv_created_by
   , lv_creation_date
   , lv_last_updated_by
-  ,  );  
+  , lv_last_update_date );  
 
   INSERT INTO telephone
   ( telephone_id

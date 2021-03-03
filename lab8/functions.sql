@@ -59,7 +59,7 @@ CREATE OR REPLACE PACKAGE BODY contact_package IS
     , pv_area_code           VARCHAR2
     , pv_telephone_number    VARCHAR2
     , pv_telephone_type      VARCHAR2
-    , pv_user_name           VARCHAR2 ) REUTRN NUMBER IS
+    , pv_user_name           VARCHAR2 ) RETURN NUMBER IS
 
   lv_address_type        VARCHAR2(30);
   lv_contact_type        VARCHAR2(30);
@@ -70,8 +70,8 @@ CREATE OR REPLACE PACKAGE BODY contact_package IS
   lv_member_id           NUMBER;
   
   lv_creation_date DATE := SYSDATE;
-  lv_created_by NUMBER := NVL(pv_user_id, -1);
-  lv_last_updated_by NUMBER := NVL(pv_user_id, -1);
+  lv_created_by NUMBER := 1;
+  lv_last_updated_by NUMBER := 1;
   lv_last_update_date DATE := SYSDATE;
   
   CURSOR get_lookup_type
@@ -363,8 +363,8 @@ END IF;
   , pv_postal_code
   , lv_created_by
   , lv_creation_date
-  , lv_last_updated_by
-  ,  );  
+  , lv_last_updated_by 
+  , lv_last_update_date );  
 
   INSERT INTO telephone
   ( telephone_id

@@ -1255,8 +1255,8 @@ Procedure created.
 PL/SQL procedure successfully completed.
 
 
-Member Contact ACCOUNT                   Member Lookup Lookup                   
-  ID #     #'s NUMBER     Last Name        Type   ID # Type                     
+Member Contact                           Member Lookup Lookup                   
+  ID #     #'s ACCOUNT_NU Last Name        Type   ID # Type                     
 ------ ------- ---------- -------------- ------ ------ ------------             
   1001       2 SJC-000001 Winn             1005   1005 GROUP                    
   1002       2 SJC-000002 Vizquel          1005   1005 GROUP                    
@@ -1279,32 +1279,32 @@ FULL_NAME        TITLE                          PRODUCT      CHECK_OUT_DATE
 ---------------- ------------------------------ ------------ ------------------ 
 RETURN_DATE                                                                     
 ------------------                                                              
-Brian Winn       The Hunt for Red October       DVD          01-MAR-21          
-06-MAR-21                                                                       
+Brian Winn       The Hunt for Red October       DVD          03-MAR-21          
+08-MAR-21                                                                       
                                                                                 
-Brian Winn       We Were Soldiers               DVD          01-MAR-21          
-06-MAR-21                                                                       
+Brian Winn       We Were Soldiers               DVD          03-MAR-21          
+08-MAR-21                                                                       
                                                                                 
-Doreen Vizquel   Around the World in 80 Days    DVD          01-MAR-21          
-06-MAR-21                                                                       
+Doreen Vizquel   Around the World in 80 Days    DVD          03-MAR-21          
+08-MAR-21                                                                       
                                                                                 
-Doreen Vizquel   Tomorrow Never Dies            DVD          01-MAR-21          
-06-MAR-21                                                                       
+Doreen Vizquel   Tomorrow Never Dies            DVD          03-MAR-21          
+08-MAR-21                                                                       
                                                                                 
-Oscar Vizquel    Star Wars - Episode I          DVD          01-MAR-21          
-06-MAR-21                                                                       
+Oscar Vizquel    Star Wars - Episode I          DVD          03-MAR-21          
+08-MAR-21                                                                       
                                                                                 
-Oscar Vizquel    Star Wars - Episode II         DVD          01-MAR-21          
-06-MAR-21                                                                       
+Oscar Vizquel    Star Wars - Episode II         DVD          03-MAR-21          
+08-MAR-21                                                                       
                                                                                 
-Oscar Vizquel    Star Wars - Episode III        DVD          01-MAR-21          
-06-MAR-21                                                                       
+Oscar Vizquel    Star Wars - Episode III        DVD          03-MAR-21          
+08-MAR-21                                                                       
                                                                                 
-Ian M Sweeney    Spider-Man                     DVD          01-MAR-21          
-06-MAR-21                                                                       
+Ian M Sweeney    Spider-Man                     DVD          03-MAR-21          
+08-MAR-21                                                                       
                                                                                 
-Meaghan Sweeney  The Patriot                    DVD          01-MAR-21          
-06-MAR-21                                                                       
+Meaghan Sweeney  The Patriot                    DVD          03-MAR-21          
+08-MAR-21                                                                       
                                                                                 
 
 9 rows selected.

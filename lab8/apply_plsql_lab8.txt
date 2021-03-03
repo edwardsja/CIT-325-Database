@@ -2,7 +2,7 @@
 Package created.
 
 
-Warning: Package Body created with compilation errors.
+Package body created.
 
 
 1 row created.
@@ -23,48 +23,34 @@ User ID User Name    Name       Name
 
 3 rows selected.
 
-BEGIN
-*
-ERROR at line 1:
-ORA-04063: package body "STUDENT.CONTACT_PACKAGE" has errors
-ORA-06508: PL/SQL: could not find program unit being called:
-"STUDENT.CONTACT_PACKAGE"
-ORA-06512: at line 2 
+
+PL/SQL procedure successfully completed.
 
 
+                         ACCOUNT                                                
+FULL_NAME                NUMBER     ADDRESS                TELEPHONE            
+------------------------ ---------- ---------------------- --------------       
+Charlie Brown            SLC-000011 Lehi, Utah             (207) 877-4321       
+Peppermint Patty         SLC-000011 Lehi, Utah             (207) 877-4321       
+Sally Brown              SLC-000011 Lehi, Utah             (207) 877-4321       
 
-no rows selected
+3 rows selected.
 
 
 Package created.
 
 
-Warning: Package Body created with compilation errors.
+Package body created.
 
-BEGIN
-*
-ERROR at line 1:
-ORA-04063: package body "STUDENT.CONTACT_PACKAGE" has errors
-ORA-06508: PL/SQL: could not find program unit being called:
-"STUDENT.CONTACT_PACKAGE"
-ORA-06512: at line 19 
+Insert function succeeds.                                                       
 
+PL/SQL procedure successfully completed.
 
-BEGIN
-*
-ERROR at line 1:
-ORA-04063: package body "STUDENT.CONTACT_PACKAGE" has errors
-ORA-06508: PL/SQL: could not find program unit being called:
-"STUDENT.CONTACT_PACKAGE"
-ORA-06512: at line 19 
+Insert function succeeds.                                                       
 
+PL/SQL procedure successfully completed.
 
-BEGIN
-*
-ERROR at line 1:
-ORA-04063: package body "STUDENT.CONTACT_PACKAGE" has errors
-ORA-06508: PL/SQL: could not find program unit being called:
-"STUDENT.CONTACT_PACKAGE"
-ORA-06512: at line 19 
+Insert function succeeds.                                                       
 
+PL/SQL procedure successfully completed.
 

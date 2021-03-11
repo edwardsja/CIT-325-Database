@@ -1,0 +1,34 @@
+DROP TABLE ACCOUNT_LIST;                                                        
+DROP SEQUENCE ACCOUNT_LIST_S1;                                                  
+DROP TABLE ADDRESS;                                                             
+DROP INDEX ADDRESS_N1;                                                          
+DROP SEQUENCE ADDRESS_S1;                                                       
+DROP PROCEDURE ADD_CONTACT;                                                     
+DROP PROCEDURE ADD_MEMBER;                                                      
+DROP TABLE AIRPORT;                                                             
+DROP SEQUENCE AIRPORT_S1;                                                       
+DROP INDEX AIRPORT_U1;                                                          
+DROP TYPE BODY BASE_T;                                                          
+DROP TYPE BASE_T;                                                               
+DROP TABLE CALENDAR;                                                            
+DROP SEQUENCE CALENDAR_S1;                                                      
+DROP TABLE COMMON_LOOKUP;                                                       
+DROP INDEX COMMON_LOOKUP_N1;                                                    
+DROP SEQUENCE COMMON_LOOKUP_S1;                                                 
+DROP INDEX COMMON_LOOKUP_U2;                                                    
+DROP TABLE CONTACT;                                                             
+DROP PROCEDURE CONTACT_INSERT;                                                  
+DROP PROCEDURE CONTACT_INSERT_10G;                                              
+DROP TYPE CONTACT_LIST_TYPE;                                                    
+DROP INDEX CONTACT_N1;                                                          
+DROP TYPE CONTACT_NAME_STRUCT;                                                  
+DROP SEQUENCE CONTACT_S1;                                                       
+DROP TYPE CONTACT_T;                                                            
+DROP TYPE BODY CONTACT_T;                                                       
+BEGIN
+*
+ERROR at line 1:
+ORA-04043: object CONTACT_T does not exist
+ORA-06512: at line 51 
+
+

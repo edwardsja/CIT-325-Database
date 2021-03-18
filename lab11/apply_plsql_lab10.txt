@@ -1,0 +1,193 @@
+ADD text_file_name VARCHAR2(40)
+    *
+ERROR at line 2:
+ORA-01430: column being added already exists in table 
+
+
+
+Table dropped.
+
+
+Table created.
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ LOGGER_ID                                 NOT NULL NUMBER
+ OLD_ITEM_ID                                        NUMBER
+ OLD_ITEM_BARCODE                                   VARCHAR2(20)
+ OLD_ITEM_TYPE                                      NUMBER
+ OLD_ITEM_TITLE                                     VARCHAR2(60)
+ OLD_ITEM_SUBTITLE                                  VARCHAR2(60)
+ OLD_ITEM_RATING                                    VARCHAR2(8)
+ OLD_ITEM_RATING_AGENCY                             VARCHAR2(4)
+ OLD_ITEM_RELEASE_DATE                              DATE
+ OLD_CREATED_BY                                     NUMBER
+ OLD_CREATION_DATE                                  DATE
+ OLD_LAST_UPDATED_BY                                NUMBER
+ OLD_LAST_UPDATE_DATE                               DATE
+ OLD_TEXT_FILE_NAME                                 VARCHAR2(40)
+ NEW_ITEM_ID                                        NUMBER
+ NEW_ITEM_BARCODE                                   VARCHAR2(20)
+ NEW_ITEM_TYPE                                      NUMBER
+ NEW_ITEM_TITLE                                     VARCHAR2(60)
+ NEW_ITEM_SUBTITLE                                  VARCHAR2(60)
+ NEW_ITEM_RATING                                    VARCHAR2(8)
+ NEW_ITEM_RATING_AGENCY                             VARCHAR2(4)
+ NEW_ITEM_RELEASE_DATE                              DATE
+ NEW_CREATED_BY                                     NUMBER
+ NEW_CREATION_DATE                                  DATE
+ NEW_LAST_UPDATED_BY                                NUMBER
+ NEW_LAST_UPDATE_DATE                               DATE
+ NEW_TEXT_FILE_NAME                                 VARCHAR2(40)
+
+
+Sequence dropped.
+
+
+Sequence created.
+
+
+PL/SQL procedure successfully completed.
+
+
+         Old                        New                                         
+Logger  Item                       Item                                         
+  ID #  ID # Old Item Title        ID # New Item Title                          
+------ ----- -------------------- ----- ------------------------------          
+     1  1014 Brave Heart           1014 Brave Heart                             
+
+1 row selected.
+
+
+Package created.
+
+PROCEDURE ITEM_INSERT
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ PV_NEW_ITEM_ID                 NUMBER                  IN    
+ PV_NEW_ITEM_BARCODE            VARCHAR2                IN    
+ PV_NEW_ITEM_TYPE               NUMBER                  IN    
+ PV_NEW_ITEM_TITLE              VARCHAR2                IN    
+ PV_NEW_ITEM_SUBTITLE           VARCHAR2                IN    
+ PV_NEW_ITEM_RATING             VARCHAR2                IN    
+ PV_NEW_ITEM_RATING_AGENCY      VARCHAR2                IN    
+ PV_NEW_ITEM_RELEASE_DATE       DATE                    IN    
+ PV_NEW_CREATED_BY              NUMBER                  IN    
+ PV_NEW_CREATION_DATE           DATE                    IN    
+ PV_NEW_LAST_UPDATED_BY         NUMBER                  IN    
+ PV_NEW_LAST_UPDATE_DATE        DATE                    IN    
+ PV_NEW_TEXT_FILE_NAME          VARCHAR2                IN    
+PROCEDURE ITEM_INSERT
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ PV_OLD_ITEM_ID                 NUMBER                  IN    
+ PV_OLD_ITEM_BARCODE            VARCHAR2                IN    
+ PV_OLD_ITEM_TYPE               NUMBER                  IN    
+ PV_OLD_ITEM_TITLE              VARCHAR2                IN    
+ PV_OLD_ITEM_SUBTITLE           VARCHAR2                IN    
+ PV_OLD_ITEM_RATING             VARCHAR2                IN    
+ PV_OLD_ITEM_RATING_AGENCY      VARCHAR2                IN    
+ PV_OLD_ITEM_RELEASE_DATE       DATE                    IN    
+ PV_OLD_CREATED_BY              NUMBER                  IN    
+ PV_OLD_CREATION_DATE           DATE                    IN    
+ PV_OLD_LAST_UPDATED_BY         NUMBER                  IN    
+ PV_OLD_LAST_UPDATE_DATE        DATE                    IN    
+ PV_OLD_TEXT_FILE_NAME          VARCHAR2                IN    
+ PV_NEW_ITEM_ID                 NUMBER                  IN    
+ PV_NEW_ITEM_BARCODE            VARCHAR2                IN    
+ PV_NEW_ITEM_TYPE               NUMBER                  IN    
+ PV_NEW_ITEM_TITLE              VARCHAR2                IN    
+ PV_NEW_ITEM_SUBTITLE           VARCHAR2                IN    
+ PV_NEW_ITEM_RATING             VARCHAR2                IN    
+ PV_NEW_ITEM_RATING_AGENCY      VARCHAR2                IN    
+ PV_NEW_ITEM_RELEASE_DATE       DATE                    IN    
+ PV_NEW_CREATED_BY              NUMBER                  IN    
+ PV_NEW_CREATION_DATE           DATE                    IN    
+ PV_NEW_LAST_UPDATED_BY         NUMBER                  IN    
+ PV_NEW_LAST_UPDATE_DATE        DATE                    IN    
+ PV_NEW_TEXT_FILE_NAME          VARCHAR2                IN    
+PROCEDURE ITEM_INSERT
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ PV_OLD_ITEM_ID                 NUMBER                  IN    
+ PV_OLD_ITEM_BARCODE            VARCHAR2                IN    
+ PV_OLD_ITEM_TYPE               NUMBER                  IN    
+ PV_OLD_ITEM_TITLE              VARCHAR2                IN    
+ PV_OLD_ITEM_SUBTITLE           VARCHAR2                IN    
+ PV_OLD_ITEM_RATING             VARCHAR2                IN    
+ PV_OLD_ITEM_RATING_AGENCY      VARCHAR2                IN    
+ PV_OLD_ITEM_RELEASE_DATE       DATE                    IN    
+ PV_OLD_CREATED_BY              NUMBER                  IN    
+ PV_OLD_CREATION_DATE           DATE                    IN    
+ PV_OLD_LAST_UPDATED_BY         NUMBER                  IN    
+ PV_OLD_LAST_UPDATE_DATE        DATE                    IN    
+ PV_OLD_TEXT_FILE_NAME          VARCHAR2                IN    
+
+
+Package body created.
+
+
+PL/SQL procedure successfully completed.
+
+
+         Old                        New                                         
+Logger  Item                       Item                                         
+  ID #  ID # Old Item Title        ID # New Item Title                          
+------ ----- -------------------- ----- ------------------------------          
+     1  1014 Brave Heart           1014 Brave Heart                             
+     2 <Null <Null>                1035 King Arthur-Inserted                    
+       >                                                                        
+                                                                                
+     3  1035 King Arthur           1035 King Arthur-Changed                     
+     4  1035 King Arthur-Deleted  <Null <Null>                                  
+                                  >                                             
+                                                                                
+
+4 rows selected.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row updated.
+
+
+1 row deleted.
+
+
+         Old                        New                                         
+Logger  Item                       Item                                         
+  ID #  ID # Old Item Title        ID # New Item Title                          
+------ ----- -------------------- ----- ------------------------------          
+     1  1014 Brave Heart           1014 Brave Heart                             
+     2 <Null <Null>                1035 King Arthur-Inserted                    
+       >                                                                        
+                                                                                
+     3  1035 King Arthur           1035 King Arthur-Changed                     
+     4  1035 King Arthur-Deleted  <Null <Null>                                  
+                                  >                                             
+                                                                                
+     5 <Null <Null>                1104 Bourne Legacy                           
+       >                                                                        
+                                                                                
+     6 <Null <Null>                1105 Star War                                
+       >                                                                        
+                                                                                
+     7  1105 Star War: The Force   1105 Star Wars: The Force Awakens            
+             Awakens                                                            
+                                                                                
+     8  1105 Star Wars: The Force <Null <Null>                                  
+              Awakens             >                                             
+                                                                                
+
+8 rows selected.
+

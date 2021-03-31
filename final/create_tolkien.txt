@@ -1,0 +1,15 @@
+
+PL/SQL procedure successfully completed.
+
+
+Table created.
+
+DROP SEQUENCE tolkien_s
+              *
+ERROR at line 1:
+ORA-02289: sequence does not exist 
+
+
+
+Sequence created.
+

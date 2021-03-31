@@ -1,0 +1,9 @@
+CREATE OR REPLACE
+*
+ERROR at line 1:
+ORA-02303: cannot drop or replace a type with type or table dependents 
+
+
+
+Type body created.
+

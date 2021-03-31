@@ -33,6 +33,7 @@ CREATE TABLE tolkien
 , tolkien_character base_t);
 
 /* Drop and create a tolkien_s sequence. */
+DROP SEQUENCE tolkien_s;
 CREATE SEQUENCE tolkien_s START WITH 1001;
 
 /* Close log file. */

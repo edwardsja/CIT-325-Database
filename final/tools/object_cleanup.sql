@@ -36,7 +36,7 @@ BEGIN
   /* Conditionally drop types. */
   FOR i IN 1..lv_list.COUNT LOOP
     FOR j IN get_object(i) LOOP
-      EXECUTE IMMEDIATE 'DROP TYPE '||j.object_name;
+      EXECUTE IMMEDIATE 'DROP TYPE '||j.object_name||' FORCE';
     END LOOP;
   END LOOP;
 END;
@@ -50,7 +50,7 @@ BEGIN
 	    FROM   user_objects o
 	    WHERE  o.object_name IN ('TOLKIEN','TOLKIEN_S')) LOOP
     IF i.object_type = 'TABLE' THEN
-      EXECUTE IMMEDIATE 'DROP '||i.object_type||' '||i.object_name;
+      EXECUTE IMMEDIATE 'DROP '||i.object_type||' '||i.object_name||' FORCE';
     ELSIF i.object_type = 'SEQUENCE' THEN
       EXECUTE IMMEDIATE 'DROP '||i.object_type||' '||i.object_name;
     END IF;
@@ -64,7 +64,7 @@ BEGIN
 	    FROM   user_objects o
 	    WHERE  o.object_name = 'BASE_T'
             AND    o.object_type = 'TYPE') LOOP
-    EXECUTE IMMEDIATE 'DROP TYPE '||i.object_name;
+    EXECUTE IMMEDIATE 'DROP TYPE '||i.object_name||' FORCE';
   END LOOP;
 END;
 /

@@ -1,5 +1,3 @@
-#!/usr/bin/bash
-
 ## ======================================================================
 ##  Name:    create_final.sh
 ##  Author:  Michael McLaughlin
@@ -7,6 +5,8 @@
 ## ------------------------------------------------------------------
 ##  Purpose: Provide an example with proper error checking.
 ## ======================================================================
+
+#!/usr/bin/bash
 
 # Assign user and password
 username="student"
@@ -17,13 +17,13 @@ echo "User name:" ${username}
 echo "Password: " ${password}
 echo "Directory:" ${directory}
 
-# Define arrays.
+# Define an array.
 declare -a cmd
-declare -a log
+echo "after define--------"
 
-# Assign elements to a command array.
-cmd[0]="tools/object_cleanup.sql"
-cmd[1]="base_t.sql"
+# Assign elements to an array.
+cmd[0]="base_t.sql"
+cmd[1]="create_tolkien.sql"
 cmd[2]="dwarf_t.sql"
 cmd[3]="elf_t.sql"
 cmd[4]="goblin_t.sql"
@@ -35,34 +35,20 @@ cmd[9]="noldor_t.sql"
 cmd[10]="silvan_t.sql"
 cmd[11]="sindar_t.sql"
 cmd[12]="teleri_t.sql"
-cmd[13]="create_tolkien.sql"
-cmd[14]="type_validation.sql"
-cmd[15]="insert_instances.sql"
-cmd[16]="query_instances.sql"
+cmd[13]="type_validation.sql"
+cmd[14]="insert_instances.sql"
+cmd[15]="query_instances.sql"
+echo "------after assignment--------"
 
-# Assign elements to a log array.
-log[0]="object_cleanup.txt"
-log[1]="base_t.txt"
-log[2]="create_tolkien.txt"
-log[3]="type_validation.txt"
-log[4]="insert_instances.txt"
-log[5]="query_instances.txt"
-
-# Call the command array elements.
+# Call the array elements.
+echo "before loop"
 for i in ${cmd[*]}; do
-  # Print the file to show progress and identify fail point.
-  if ! [[ -f ${i} ]]; then
-    echo "File [${i}] is missing."
-  else
-    sqlplus -s ${username}/${password} @${directory}/${i} > /dev/null
-  fi
+  echo "------ in loop #${i}-------"
+  sqlplus -s ${username}/${password} @${directory}/${i} > /dev/null
 done
 
-# Display the log array elements to console.
-for i in ${log[*]}; do
-  if [[ -f ${i} ]]; then
-    cat ${i}
-  else
-    echo "File [${i}]."
-  fi
-done
+echo "----------after loop---------------"
+
+# Print query log files.
+cat type_validation.txt
+cat query_instances.txt

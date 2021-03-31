@@ -26,4 +26,4 @@ ORDER BY 1, TREAT(t.tolkien_character AS base_t).get_name();
 SPOOL OFF
 
 /* Close connection. */
-QUIT
+QUIT;

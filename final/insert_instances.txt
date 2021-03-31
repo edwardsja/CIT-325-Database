@@ -1,0 +1,82 @@
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+( tolkien_s.NEXTVAL, noldor_t(9, 'Elf', 'Feanor', 'Elves', 'Noldor'))
+                     *
+ERROR at line 3:
+ORA-00932: inconsistent datatypes: expected - got UDT 
+
+
+( tolkien_s.NEXTVAL, silvan_t(10, 'Elf', 'Tauriel', 'Elves', 'Silvan'))
+                     *
+ERROR at line 3:
+ORA-00932: inconsistent datatypes: expected - got UDT 
+
+
+( tolkien_s.NEXTVAL, teleri_t(11, 'Elf', 'Earwen', 'Elves', 'Teleri'))
+                     *
+ERROR at line 3:
+ORA-00932: inconsistent datatypes: expected - got UDT 
+
+
+( tolkien_s.NEXTVAL, teleri_t(12, 'Elf', 'Celebirn', 'Elves', 'Teleri'))
+                     *
+ERROR at line 3:
+ORA-00932: inconsistent datatypes: expected - got UDT 
+
+
+( tolkien_s.NEXTVAL, sindar_t(13, 'Elf', 'Thranduil', 'Elves', 'Sindar'))
+                     *
+ERROR at line 3:
+ORA-00932: inconsistent datatypes: expected - got UDT 
+
+
+( tolkien_s.NEXTVAL, sindar_t(14, 'Elf', 'Legolas', 'Elves', 'Sindar'))
+                     *
+ERROR at line 3:
+ORA-00932: inconsistent datatypes: expected - got UDT 
+
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+No errors.
